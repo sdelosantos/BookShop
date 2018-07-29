@@ -4,13 +4,13 @@ It is an application for an online book store.
 
 ## ScreenShots
 ### Login
-<img src="/sdelosantos/BookShop/blob/master/ScreenShot/Login.png" width="256px" height="auto"/>
+<img src="https://github.com/sdelosantos/BookShop/blob/master/ScreenShot/login.png" width="256px" height="auto"/>
 
 ### Book List
-<img src="ScreenShot/List.png" width="256px" height="auto"/>
+<img src="https://github.com/sdelosantos/BookShop/blob/master/ScreenShot/book_list.png" width="256px" height="auto"/>
 
 ### Book Detail
-<img src="ScreenShot/Detail.png" width="256px" height="auto"/>
+<img src="https://github.com/sdelosantos/BookShop/blob/master/ScreenShot/detail.png" width="256px" height="auto"/>
 
 ## App Architecture And Used Tools
 ### RestFul Api

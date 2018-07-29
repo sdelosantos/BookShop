@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/main_list_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    android:background="#ffff"
+    android:weightSum="12"
+    android:orientation="horizontal"
+    tools:context=".BookListContent"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ImageView
+        android:id="@+id/imgBookCover"
+        android:layout_width="92dp"
+        android:layout_height="138dp"
+        android:layout_weight="6" />
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_weight="6"
+        android:layout_marginStart="5dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvBookName"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="15dp"
+            android:fontFamily="calibri"
+            android:text="Jouney to the Centre of the Earth "
+            android:textAlignment="viewStart"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvAuthor"
+            android:layout_width="276dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvBookName"
+            android:maxWidth="220dp"
+            android:text="by Jules Verne"
+            android:textAlignment="viewStart"
+            android:textColor="#a0a0a0" />
+
+        <TextView
+            android:id="@+id/tvprice"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvAuthor"
+            android:layout_marginEnd="3dp"
+            android:maxWidth="220dp"
+            android:text="$15.00"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvShipping"
+            android:layout_width="277dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/tvprice"
+            android:layout_marginTop="3dp"
+            android:maxWidth="220dp"
+            android:text="FREE Shipping"
+            android:textAlignment="viewStart"
+            android:textColor="#a0a0a0" />
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>

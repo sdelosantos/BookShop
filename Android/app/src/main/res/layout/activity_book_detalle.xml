@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:padding="20dp"
+            tools:context=".BookDetailActivity"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/lay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvBookName"
+                    android:layout_width="329dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="Jouney to the Centre of the Earth "
+                    android:textColor="#000000"
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvAuthorName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvBookName"
+                    android:gravity="left"
+                    android:text="by Jule Bernet"
+                    android:textColor="@color/coloSecondary"
+                    android:textSize="13dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lay_cover"
+                android:layout_below="@+id/lay_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal|center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgBookCover"
+                    android:layout_width="130dp"
+                    android:layout_height="160dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay_info"
+                android:layout_below="@id/lay_cover"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:id="@+id/ln2"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_height="1dp"
+                    android:background="@color/lineColor"></View>
+                <TextView
+                    android:id="@+id/tvPrice"
+                    android:layout_width="match_parent"
+                    android:text="$00.00"
+                    android:layout_below="@+id/ln2"
+                    android:textSize="35sp"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginBottom="5dp"
+                    android:textStyle="bold"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/tvShippingDetail"
+                    android:layout_width="wrap_content"
+                    android:layout_below="@id/tvPrice"
+                    android:textSize="17dp"
+                    android:textColor="#5d5d5d"
+                    android:textAlignment="viewStart"
+                    android:text=""
+                    android:layout_height="wrap_content" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inp_lay_format"
+                    android:layout_below="@+id/tvShippingDetail"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:text="Format:"/>
+                    <TextView
+                        android:id="@+id/tvFormat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Audio Libro"
+                        android:textColor="@color/coloSecondary" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <Button
+                    android:layout_below="@id/inp_lay_format"
+                    android:id="@+id/btnBuy"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_primary_shape"
+                    android:textStyle="bold"
+                    android:text="Buy Now"/>
+                <Button
+                    android:id="@+id/btnCart"
+                    android:layout_below="@id/btnBuy"
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:textColor="#FFFFFF"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_secondary_shape"
+                    android:textStyle="bold"
+                    android:text="Add to Cart"/>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/inp_lay_desc"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@id/btnCart"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="#000000"
+                        android:textSize="18sp"
+                        android:text="Book Description"/>
+
+                    <TextView
+                        android:id="@+id/bookDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="asdfa dkoeeodmf ooewe i asdf asddd dsefadfd asdf  asdfcasdpsfopsdf "
+                        android:textAlignment="viewStart"
+                        android:textColor="#5d5d5d" />
+                </android.support.design.widget.TextInputLayout>
+            </RelativeLayout>
+
+        </RelativeLayout>
+</ScrollView>

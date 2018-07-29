@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#efeeee"
+    android:layout_height="match_parent"
+    tools:context=".BookShopActivity">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/tbSearch"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#ffffff"
+        android:paddingBottom="5dp"
+        android:paddingEnd="5dp"
+        android:paddingStart="0dp"
+        android:paddingTop="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="0dp"
+            android:weightSum="12">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="left"
+                android:src="@mipmap/logo" />
+
+            <ImageView
+                android:id="@+id/imgSearh"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginTop="12sp"
+                android:layout_marginEnd="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:layout_toStartOf="@+id/imgCart"
+                android:background="@mipmap/search" />
+
+            <ImageView
+                android:id="@+id/imgCart"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="right"
+                android:background="@mipmap/cart" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/tvUserName"
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:textAlignment="textEnd"
+        android:textColor="@color/coloSecondary"
+        android:textSize="15sp"
+        android:paddingEnd="10dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tbSearch"
+        android:text="Welcome," />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rcView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="73dp"
+        android:padding="8dp"></android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

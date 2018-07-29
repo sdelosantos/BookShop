@@ -30,8 +30,9 @@ It is an application for an online book store.
 * Book List
 * Book Detail
 
-### future features
+### Future features
 * Search bar
+* Material Design
 * Shopping cart
 * Feedback and comments
 
